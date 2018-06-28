@@ -3,7 +3,7 @@
 
 int main() {
 
-    EasySound es(16000);
+    EasyPlayer es;
     es.play("../../../yes.wav");
 
 }
