@@ -5,5 +5,6 @@
 int main() {
 
     EasyPlayer es;
-    es.play("../../../yes_boss.wav");
+    es.play("../../../yes.wav");
+    es.play("../../../yes.wav");
 }
