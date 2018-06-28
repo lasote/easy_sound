@@ -91,6 +91,7 @@ void EasyPlayer::play(std::string filepath) {
 
     fp = fopen(filepath.c_str(), "rb");
 
+
     char type[4];
     DWORD size, chunkSize;
     short formatType, channels;
@@ -185,8 +186,6 @@ void EasyPlayer::play(std::string filepath) {
 
     alDeleteSources(1, &source);
     alDeleteBuffers(1, &buffer);
-    alcMakeContextCurrent(NULL);
-
 }
 
 
