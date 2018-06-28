@@ -186,6 +186,8 @@ void EasyPlayer::play(std::string filepath) {
 
     alDeleteSources(1, &source);
     alDeleteBuffers(1, &buffer);
+
+    alcMakeContextCurrent(NULL);
 }
 
 
